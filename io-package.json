@@ -1,0 +1,134 @@
+{
+    "common": {
+        "name": "wifiwhirl",
+        "version": "0.1.0",
+        "news": {
+            "0.1.0": {
+                "en": "first version: values, control, water quality, maintenance and Smart Schedule via the module API (software 2.1.0+), no MQTT broker needed",
+                "de": "erste Version: Werte, Steuerung, Wasserwerte, Wartung und Smart Schedule über die API des Moduls (Software 2.1.0+), ohne MQTT-Broker",
+                "ru": "первая версия: значения, управление, качество воды, обслуживание и Smart Schedule через API модуля (ПО 2.1.0+), без MQTT-брокера",
+                "pt": "primeira versão: valores, controlo, qualidade da água, manutenção e Smart Schedule através da API do módulo (software 2.1.0+), sem broker MQTT",
+                "nl": "eerste versie: waarden, bediening, waterkwaliteit, onderhoud en Smart Schedule via de API van de module (software 2.1.0+), zonder MQTT-broker",
+                "fr": "première version : valeurs, commande, qualité de l'eau, entretien et Smart Schedule via l'API du module (logiciel 2.1.0+), sans broker MQTT",
+                "it": "prima versione: valori, controllo, qualità dell'acqua, manutenzione e Smart Schedule tramite l'API del modulo (software 2.1.0+), senza broker MQTT",
+                "es": "primera versión: valores, control, calidad del agua, mantenimiento y Smart Schedule a través de la API del módulo (software 2.1.0+), sin broker MQTT",
+                "pl": "pierwsza wersja: wartości, sterowanie, jakość wody, konserwacja i Smart Schedule przez API modułu (oprogramowanie 2.1.0+), bez brokera MQTT",
+                "uk": "перша версія: значення, керування, якість води, обслуговування та Smart Schedule через API модуля (ПЗ 2.1.0+), без MQTT-брокера",
+                "zh-cn": "第一个版本：通过模块 API（软件 2.1.0+）读取数值、控制、水质、维护和 Smart Schedule，无需 MQTT 代理"
+            }
+        },
+        "titleLang": {
+            "en": "WifiWhirl",
+            "de": "WifiWhirl",
+            "ru": "WifiWhirl",
+            "pt": "WifiWhirl",
+            "nl": "WifiWhirl",
+            "fr": "WifiWhirl",
+            "it": "WifiWhirl",
+            "es": "WifiWhirl",
+            "pl": "WifiWhirl",
+            "uk": "WifiWhirl",
+            "zh-cn": "WifiWhirl"
+        },
+        "desc": {
+            "en": "Control your Bestway Lay-Z-Spa whirlpool with the WifiWhirl module",
+            "de": "Steuere deinen Bestway Lay-Z-Spa Whirlpool mit dem WifiWhirl-Modul",
+            "ru": "Управляйте гидромассажной ванной Bestway Lay-Z-Spa с помощью модуля WifiWhirl",
+            "pt": "Controle a sua banheira de hidromassagem Bestway Lay-Z-Spa com o módulo WifiWhirl",
+            "nl": "Bedien je Bestway Lay-Z-Spa-whirlpool met de WifiWhirl-module",
+            "fr": "Contrôle ton spa Bestway Lay-Z-Spa avec le module WifiWhirl",
+            "it": "Controlla la tua vasca idromassaggio Bestway Lay-Z-Spa con il modulo WifiWhirl",
+            "es": "Controla tu jacuzzi Bestway Lay-Z-Spa con el módulo WifiWhirl",
+            "pl": "Steruj swoim jacuzzi Bestway Lay-Z-Spa za pomocą modułu WifiWhirl",
+            "uk": "Керуйте гідромасажною ванною Bestway Lay-Z-Spa за допомогою модуля WifiWhirl",
+            "zh-cn": "使用 WifiWhirl 模块控制您的 Bestway Lay-Z-Spa 按摩浴缸"
+        },
+        "authors": [
+            "WifiWhirl <info@wifiwhirl.de>"
+        ],
+        "keywords": [
+            "wifiwhirl",
+            "whirlpool",
+            "lay-z-spa",
+            "bestway",
+            "spa",
+            "hot tub"
+        ],
+        "licenseInformation": {
+            "type": "free",
+            "license": "GPL-3.0-only"
+        },
+        "platform": "Javascript/Node.js",
+        "icon": "wifiwhirl.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/WiFiWhirl/ioBroker.wifiwhirl/main/admin/wifiwhirl.png",
+        "readme": "https://github.com/WiFiWhirl/ioBroker.wifiwhirl/blob/main/README.md",
+        "loglevel": "info",
+        "tier": 3,
+        "mode": "daemon",
+        "type": "household",
+        "compact": true,
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=6.0.11"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=7.6.20"
+            }
+        ],
+        "connectionType": "local",
+        "dataSource": "poll"
+    },
+    "native": {
+        "host": "",
+        "apiKey": "",
+        "interval": 10
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": {
+                    "en": "Connected to the module",
+                    "de": "Mit dem Modul verbunden",
+                    "ru": "Подключено к модулю",
+                    "pt": "Ligado ao módulo",
+                    "nl": "Verbonden met de module",
+                    "fr": "Connecté au module",
+                    "it": "Connesso al modulo",
+                    "es": "Conectado al módulo",
+                    "pl": "Połączono z modułem",
+                    "uk": "Підключено до модуля",
+                    "zh-cn": "已连接到模块"
+                },
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ],
+    "encryptedNative": [
+        "apiKey"
+    ],
+    "protectedNative": [
+        "apiKey"
+    ]
+}

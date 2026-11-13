@@ -1,0 +1,8 @@
+{
+    "wwHost": "Adresse des Moduls",
+    "wwHostHelp": "IP-Adresse oder Hostname, z. B. 192.168.178.42 (Weboberfläche → Netzwerkkonfiguration)",
+    "wwInterval": "Aktualisieren alle",
+    "wwLogin": "Zugang zur API",
+    "wwLoginHelp": "Leg in der Weboberfläche des Moduls auf der Seite Experte (Karte API) einen Schlüssel mit „Lesen und steuern“ an und füg ihn hier ein. Dort schaltest du auch die API ein. Braucht WifiWhirl-Software 2.1.0 oder neuer.",
+    "wwApiKey": "API-Schlüssel"
+}

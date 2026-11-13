@@ -1,0 +1,8 @@
+{
+    "wwHost": "Adres modułu",
+    "wwHostHelp": "Adres IP lub nazwa hosta, np. 192.168.178.42 (interfejs WWW → konfiguracja sieci)",
+    "wwInterval": "Odświeżaj co",
+    "wwLogin": "Dostęp do API",
+    "wwLoginHelp": "Utwórz klucz „Odczyt i sterowanie” w interfejsie WWW modułu na stronie Ekspert (karta API) i wklej go tutaj. Tam też włącz API. Wymaga oprogramowania WifiWhirl 2.1.0 lub nowszego.",
+    "wwApiKey": "Klucz API"
+}

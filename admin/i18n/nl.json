@@ -1,0 +1,8 @@
+{
+    "wwHost": "Adres van de module",
+    "wwHostHelp": "IP-adres of hostnaam, bijv. 192.168.178.42 (webinterface → netwerkconfiguratie)",
+    "wwInterval": "Bijwerken elke",
+    "wwLogin": "API-toegang",
+    "wwLoginHelp": "Maak in de webinterface van de module op de pagina Expert (kaart API) een sleutel met \"Lezen en bedienen\" en plak hem hier. Schakel daar ook de API in. Vereist WifiWhirl-software 2.1.0 of nieuwer.",
+    "wwApiKey": "API-sleutel"
+}

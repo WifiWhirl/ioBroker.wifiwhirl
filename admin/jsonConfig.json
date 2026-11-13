@@ -1,0 +1,62 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "host": {
+            "type": "text",
+            "label": "wwHost",
+            "help": "wwHostHelp",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "interval": {
+            "type": "number",
+            "label": "wwInterval",
+            "min": 5,
+            "max": 3600,
+            "unit": "s",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "loginHeader": {
+            "type": "header",
+            "text": "wwLogin",
+            "size": 4,
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12,
+            "xl": 12
+        },
+        "loginHelp": {
+            "type": "staticText",
+            "text": "wwLoginHelp",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12,
+            "xl": 12
+        },
+        "apiKey": {
+            "type": "password",
+            "label": "wwApiKey",
+            "repeat": false,
+            "visible": true,
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        }
+    }
+}

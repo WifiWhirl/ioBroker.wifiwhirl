@@ -1,0 +1,8 @@
+{
+    "wwHost": "Address of the module",
+    "wwHostHelp": "IP address or host name, e.g. 192.168.178.42 (web interface → Network configuration)",
+    "wwInterval": "Update every",
+    "wwLogin": "API access",
+    "wwLoginHelp": "Create a key with \"Read and control\" in the module's web interface on the Expert mode page (card API) and paste it here. Switch on the API there as well. Needs WifiWhirl software 2.1.0 or newer.",
+    "wwApiKey": "API key"
+}

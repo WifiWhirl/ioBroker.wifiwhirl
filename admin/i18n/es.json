@@ -1,0 +1,8 @@
+{
+    "wwHost": "Dirección del módulo",
+    "wwHostHelp": "Dirección IP o nombre de host, p. ej. 192.168.178.42 (interfaz web → configuración de red)",
+    "wwInterval": "Actualizar cada",
+    "wwLogin": "Acceso a la API",
+    "wwLoginHelp": "Crea una clave con «Leer y controlar» en la interfaz web del módulo, página Experto (tarjeta API), y pégala aquí. Activa allí también la API. Requiere el software WifiWhirl 2.1.0 o posterior.",
+    "wwApiKey": "Clave API"
+}
