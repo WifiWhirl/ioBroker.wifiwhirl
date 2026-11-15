@@ -7,7 +7,7 @@
     "email": "info@wifiwhirl.de"
   },
   "contributors": [],
-  "homepage": "https://github.com/WiFiWhirl/ioBroker.wifiwhirl",
+  "homepage": "https://github.com/WifiWhirl/ioBroker.wifiwhirl",
   "license": "GPL-3.0-only",
   "keywords": [
     "ioBroker",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/WiFiWhirl/ioBroker.wifiwhirl.git"
+    "url": "https://github.com/WifiWhirl/ioBroker.wifiwhirl.git"
   },
   "engines": {
     "node": ">= 22.19.0"
@@ -60,7 +60,7 @@
     "release": "release-script"
   },
   "bugs": {
-    "url": "https://github.com/WiFiWhirl/ioBroker.wifiwhirl/issues"
+    "url": "https://github.com/WifiWhirl/ioBroker.wifiwhirl/issues"
   },
   "readmeFilename": "README.md"
 }
