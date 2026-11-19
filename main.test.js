@@ -1,7 +1,7 @@
 'use strict';
 
 const { expect } = require('chai');
-const { STATES, INFO_STATES, valuesFrom, requestFor, scheduleBody, scheduleValues } = require('./lib/mapping');
+const { STATES, INFO_STATES, SCHEDULE_STATES, valuesFrom, requestFor, scheduleBody, scheduleValues } = require('./lib/mapping');
 const status = require('./test/fixtures/status.json'); // answer of /api/v1/status, firmware 2.1.0 (emulator)
 
 describe('valuesFrom /api/v1/status', () => {
@@ -83,5 +83,24 @@ describe('Smart Schedule', () => {
     it('heating start only while active', () => {
         expect(scheduleValues({ active: true, heatingStart: 1798117200 })['smartSchedule.heatingStart']).to.equal(1798117200000);
         expect(scheduleValues({ active: false, heatingStart: 1798117200 })['smartSchedule.heatingStart']).to.equal(null);
+    });
+});
+
+describe('object definitions (repochecker)', () => {
+    const all = [...STATES, ...INFO_STATES, ...SCHEDULE_STATES];
+
+    it('every name has all 11 ioBroker languages', () => {
+        const langs = ['en', 'de', 'ru', 'pt', 'nl', 'fr', 'it', 'es', 'pl', 'uk', 'zh-cn'];
+        for (const s of all) {
+            expect(Object.keys(s.name), s.id).to.include.members(langs);
+        }
+    });
+
+    it('writable numbers use a level role, not value', () => {
+        for (const s of all) {
+            if (s.water || s.control) {
+                expect(s.role, s.id).to.not.match(/^value/);
+            }
+        }
     });
 });

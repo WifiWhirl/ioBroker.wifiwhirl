@@ -187,7 +187,13 @@ class WifiWhirl extends utils.Adapter {
             };
             for (const [id, val] of Object.entries(values)) {
                 if (this.lastValues[id] !== val) {
-                    await this.setState(id, val, true);
+                    // null ("never", "no schedule") leaves the state empty: a null value
+                    // would not match common.type (repochecker E3005)
+                    if (val === null) {
+                        await this.delStateAsync(id);
+                    } else {
+                        await this.setState(id, val, true);
+                    }
                     this.lastValues[id] = val;
                 }
             }
