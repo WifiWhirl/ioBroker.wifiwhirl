@@ -1,6 +1,6 @@
 {
   "name": "iobroker.wifiwhirl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Control your Bestway Lay-Z-Spa whirlpool with the WifiWhirl module (software 2.x)",
   "author": {
     "name": "WifiWhirl",

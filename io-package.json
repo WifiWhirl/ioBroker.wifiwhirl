@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "wifiwhirl",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "news": {
+            "0.1.1": {
+                "en": "package.json: repository URL in the form npm expects\nDependabot no longer proposes TypeScript major updates (typescript-eslint only supports TypeScript < 6.1)",
+                "de": "package.json: Repository-URL in der Form, die npm erwartet\nDependabot schlägt keine TypeScript-Hauptversionen mehr vor (typescript-eslint unterstützt nur TypeScript < 6.1)",
+                "ru": "package.json: URL репозитория в формате, который ожидает npm\nDependabot больше не предлагает мажорные обновления TypeScript (typescript-eslint поддерживает только TypeScript < 6.1)",
+                "pt": "package.json: URL do repositório no formato esperado pelo npm\nO Dependabot já não propõe atualizações major do TypeScript (o typescript-eslint só suporta TypeScript < 6.1)",
+                "nl": "package.json: repository-URL in de vorm die npm verwacht\nDependabot stelt geen major-updates van TypeScript meer voor (typescript-eslint ondersteunt alleen TypeScript < 6.1)",
+                "fr": "package.json : URL du dépôt au format attendu par npm\nDependabot ne propose plus de mises à jour majeures de TypeScript (typescript-eslint ne prend en charge que TypeScript < 6.1)",
+                "it": "package.json: URL del repository nel formato previsto da npm\nDependabot non propone più aggiornamenti major di TypeScript (typescript-eslint supporta solo TypeScript < 6.1)",
+                "es": "package.json: URL del repositorio en el formato que espera npm\nDependabot ya no propone actualizaciones mayores de TypeScript (typescript-eslint solo admite TypeScript < 6.1)",
+                "pl": "package.json: adres URL repozytorium w formacie oczekiwanym przez npm\nDependabot nie proponuje już głównych aktualizacji TypeScript (typescript-eslint obsługuje tylko TypeScript < 6.1)",
+                "uk": "package.json: URL репозиторію у форматі, який очікує npm\nDependabot більше не пропонує мажорні оновлення TypeScript (typescript-eslint підтримує лише TypeScript < 6.1)",
+                "zh-cn": "package.json：仓库 URL 采用 npm 期望的格式\nDependabot 不再建议 TypeScript 主版本更新（typescript-eslint 仅支持 TypeScript < 6.1）"
+            },
             "0.1.0": {
                 "en": "first version: values, control, water quality, maintenance and Smart Schedule via the module API (software 2.1.0+), no MQTT broker needed",
                 "de": "erste Version: Werte, Steuerung, Wasserwerte, Wartung und Smart Schedule über die API des Moduls (Software 2.1.0+), ohne MQTT-Broker",

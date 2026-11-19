@@ -53,6 +53,10 @@ Tested against a real module (software 2.1.0).
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### 0.1.1 (2026-11-19)
+
+* package.json: repository URL in the form npm expects
+* Dependabot no longer proposes TypeScript major updates (typescript-eslint only supports TypeScript < 6.1)
 
 ### 0.1.0
 
