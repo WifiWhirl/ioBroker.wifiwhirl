@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "wifiwhirl",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "news": {
+            "0.1.2": {
+                "en": "State names in all ioBroker languages\nWater quality values are writable, so they now use the role \"level\"\n\"Never\" and \"no schedule\" leave a state empty instead of writing null",
+                "de": "Namen der Datenpunkte in allen ioBroker-Sprachen\nWasserwerte sind beschreibbar und haben deshalb jetzt die Rolle „level“\n„Nie“ und „kein Zeitplan“ lassen den Datenpunkt leer, statt null zu schreiben",
+                "ru": "Названия состояний на всех языках ioBroker\nПоказатели качества воды доступны для записи, поэтому теперь имеют роль «level»\n«Никогда» и «нет расписания» оставляют состояние пустым вместо записи null",
+                "pt": "Nomes dos estados em todos os idiomas do ioBroker\nOs valores da qualidade da água podem ser escritos, por isso usam agora o papel \"level\"\n\"Nunca\" e \"sem programação\" deixam o estado vazio em vez de escrever null",
+                "nl": "Namen van de datapunten in alle ioBroker-talen\nWaterkwaliteitswaarden zijn schrijfbaar en hebben daarom nu de rol \"level\"\n\"Nooit\" en \"geen planning\" laten het datapunt leeg in plaats van null te schrijven",
+                "fr": "Noms des états dans toutes les langues d'ioBroker\nLes valeurs de qualité de l'eau sont modifiables et utilisent donc désormais le rôle « level »\n« Jamais » et « aucune planification » laissent l'état vide au lieu d'écrire null",
+                "it": "Nomi degli stati in tutte le lingue di ioBroker\nI valori della qualità dell'acqua sono scrivibili, quindi ora usano il ruolo \"level\"\n\"Mai\" e \"nessuna programmazione\" lasciano lo stato vuoto invece di scrivere null",
+                "es": "Nombres de los estados en todos los idiomas de ioBroker\nLos valores de calidad del agua se pueden escribir, por eso ahora usan el rol \"level\"\n\"Nunca\" y \"sin programación\" dejan el estado vacío en lugar de escribir null",
+                "pl": "Nazwy stanów we wszystkich językach ioBroker\nWartości jakości wody są zapisywalne, dlatego mają teraz rolę „level”\n„Nigdy” i „brak harmonogramu” pozostawiają stan pusty zamiast zapisywać null",
+                "uk": "Назви станів усіма мовами ioBroker\nПоказники якості води доступні для запису, тому тепер мають роль «level»\n«Ніколи» і «немає розкладу» залишають стан порожнім замість запису null",
+                "zh-cn": "状态名称支持所有 ioBroker 语言\n水质数值可写入，因此现在使用 \"level\" 角色\n\"从未\"和\"无计划\"会让状态保持为空，而不是写入 null"
+            },
             "0.1.1": {
                 "en": "package.json: repository URL in the form npm expects\nDependabot no longer proposes TypeScript major updates (typescript-eslint only supports TypeScript < 6.1)",
                 "de": "package.json: Repository-URL in der Form, die npm erwartet\nDependabot schlägt keine TypeScript-Hauptversionen mehr vor (typescript-eslint unterstützt nur TypeScript < 6.1)",

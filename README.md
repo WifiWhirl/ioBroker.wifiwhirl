@@ -53,6 +53,12 @@ Tested against a real module (software 2.1.0).
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### 0.1.2 (2026-11-19)
+
+* State names in all ioBroker languages
+* Water quality values are writable, so they now use the role `level`
+* "Never" and "no schedule" leave a state empty instead of writing null
+
 ### 0.1.1 (2026-11-19)
 
 * package.json: repository URL in the form npm expects
