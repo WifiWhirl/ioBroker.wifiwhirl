@@ -39,6 +39,8 @@ describe('requestFor', () => {
     it('switches send true/false to /controls', () => {
         expect(requestFor('control.pump', 1)).to.deep.equal({ path: '/api/v1/controls', body: { pump: true } });
         expect(requestFor('control.airjet', false)).to.deep.equal({ path: '/api/v1/controls', body: { bubbles: false } });
+        expect(requestFor('control.heater', 'false')?.body).to.deep.equal({ heater: false });
+        expect(requestFor('control.heater', 'abc')).to.equal(null);
     });
 
     it('numbers are checked', () => {

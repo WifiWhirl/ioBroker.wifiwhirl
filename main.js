@@ -66,7 +66,7 @@ class WifiWhirl extends utils.Adapter {
         this.subscribeStates('maintenance.done.*');
         this.subscribeStates('waterQuality.*');
         this.subscribeStates('smartSchedule.*');
-        this.poll();
+        this.startPoll();
     }
 
     /** @param {import('./lib/mapping').StateDef} s - entry of the state lists */
@@ -207,13 +207,18 @@ class WifiWhirl extends utils.Adapter {
                 this.lastProblem = e.message;
             }
         }
-        this.pollTimer = this.setTimeout(() => this.poll(), this.interval);
+        this.pollTimer = this.setTimeout(() => this.startPoll(), this.interval);
+    }
+
+    /** Runs poll() without leaving a rejected promise behind (e.g. setState during shutdown). */
+    startPoll() {
+        this.poll().catch(e => this.log.error(`Poll failed: ${e.message}`));
     }
 
     /** Fetch fresh values shortly after a command, the module needs a moment. */
     pollSoon() {
         this.clearTimeout(this.pollTimer);
-        this.pollTimer = this.setTimeout(() => this.poll(), 1500);
+        this.pollTimer = this.setTimeout(() => this.startPoll(), 1500);
     }
 
     /**

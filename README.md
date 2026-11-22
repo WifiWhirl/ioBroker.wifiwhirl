@@ -59,6 +59,9 @@ Tested against a real module (software 2.1.0).
 
 * "After the target time" labels are English only
 * VIS-2 view in English, German view kept as `whirlpool-view.de.json`
+* WiFi signal uses the role `value.rssi`
+* Switches only accept true/false/1/0, the text "false" no longer switches on
+* A failing poll can no longer leave an unhandled promise rejection
 
 ### 0.1.2 (2026-11-19)
 
