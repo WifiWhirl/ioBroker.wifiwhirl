@@ -2,59 +2,82 @@
 
 # ioBroker.wifiwhirl
 
-Control your Bestway® Lay-Z-Spa™ whirlpool with the [WifiWhirl](https://wifiwhirl.de) module (software 2.x).
-The adapter talks to the module directly over your WiFi. No MQTT broker, no cloud, no scripts.
+[![NPM version](https://img.shields.io/npm/v/iobroker.wifiwhirl.svg)](https://www.npmjs.com/package/iobroker.wifiwhirl)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.wifiwhirl.svg)](https://www.npmjs.com/package/iobroker.wifiwhirl)
+[![Test and Release](https://github.com/WifiWhirl/ioBroker.wifiwhirl/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/WifiWhirl/ioBroker.wifiwhirl/actions/workflows/test-and-release.yml)
 
-German guide with screenshots: [wifiwhirl.de/Integrationen/iobroker](https://wifiwhirl.de/Integrationen/iobroker)
+## wifiwhirl adapter for ioBroker
 
-Ready-made VIS-2 view to import: [vis-2/whirlpool-view.json](vis-2/whirlpool-view.json) (English), [vis-2/whirlpool-view.de.json](vis-2/whirlpool-view.de.json) (German).
+Connects ioBroker to a Bestway® Lay-Z-Spa™ whirlpool that is equipped with the
+[WifiWhirl](https://wifiwhirl.de) module (software 2.x). The adapter talks to the module directly over
+your local network: no MQTT broker, no cloud, no scripts.
+
+It shows water and outside temperature, heating state, power, energy and costs, and lets you switch
+the filter pump, heater, AirJet and HydroJet, set the target temperature, log water measurements and
+maintenance, and plan heating with the module's Smart Schedule.
 
 ## Requirements
 
 * WifiWhirl module with software **2.1.0 or newer**.
-* In the module's web interface, Expert mode page, card **API**: switch the API on and create an API key with "read and control".
+* The module's API is switched on and has an API key with the right "read and control": module web
+  interface, page *Expert mode*, card **API**.
+* The module must be reachable from the ioBroker host over HTTP (port 80, or the port added to the address, e.g. `192.168.178.42:8080`).
 
-## Setup
+## Configuration
 
-1. Install **WifiWhirl** and create an instance.
-2. Enter the module's **address**, e.g. `192.168.178.42`, and the **API key**.
+| Setting | Description | Default |
+| --- | --- | --- |
+| Address of the module | IP address or host name of the module, e.g. `192.168.178.42` | - |
+| Update every | Polling interval in seconds (5-3600) | 10 |
+| API key | Key created on the module (*Expert mode* → *API*, "read and control"); stored encrypted | - |
 
 ## States
 
-| Channel | Content |
-| --- | --- |
-| `control` | writable: filter pump, heater, AirJet, HydroJet, power, button lock, target temperature, display brightness |
-| `status` | water temperature, outside temperature, heating, target reached, ready in (h), error code, pump display, power, energy and costs |
-| `maintenance` | last chlorine, filter cleaned/changed, water changed (empty = never); buttons under `maintenance.done` mark a task as done now |
-| `waterQuality` | last measured pH, chlorine, cyanuric acid, alkalinity; writing a value enters a new measurement |
-| `smartSchedule` | target time (`YYYY-MM-DD HH:MM`, time zone of the ioBroker host), target temperature, after target (0 all off, 1 filter pump only, 2 keep heating), start, cancel, active, heating start |
-| `info` | connection, software version, pump model, WiFi signal |
+| Channel | Writable | Content |
+| --- | :---: | --- |
+| `control` | ✓ | filter pump, heater, AirJet, HydroJet, power, button lock, target temperature (°C), display brightness (0-8) |
+| `status` | - | water and outside temperature, heating, target reached, ready in (h), pump error code, pump display, power, energy and costs |
+| `maintenance` | - | last chlorine, filter cleaned, filter changed, water changed (date, empty = never) |
+| `maintenance.done` | ✓ | buttons that mark a maintenance task as done now |
+| `waterQuality` | ✓ | last measured pH, chlorine, cyanuric acid, alkalinity; writing a value enters a new measurement |
+| `smartSchedule` | ✓ | target time (`YYYY-MM-DD HH:MM`), target temperature, after target, start, cancel; read only: active, heating start |
+| `info` | - | connection, software version, pump model, WiFi signal |
 
-Switching the heater on also switches the filter pump on. A Smart Schedule only starts when `smartSchedule.start` is pressed.
+Switching the heater on also switches the filter pump on. A Smart Schedule only starts when
+`smartSchedule.start` is pressed. Every state is explained in the user guide.
 
-## How it works
+## Known limitations
 
-* Uses the module's API `/api/v1` with an API key (`Authorization: Bearer ...`), see the [API description](https://wifiwhirl.de/Integrationen/api).
-* Polls `GET /api/v1/status`, `/info` and `/schedule` every 10 s (configurable, 5-3600 s).
-* Writes go to `POST /api/v1/controls`, `/maintenance`, `/waterquality` and `/schedule` (`DELETE` cancels).
-* Temperatures are always °C; the module converts if the pump shows °F.
+* One module per instance; create one instance per whirlpool.
+* Temperatures are always °C (the module converts if the pump shows °F).
+* The Smart Schedule target time is read in the time zone of the ioBroker host.
+* Costs have no unit, the module does not report a currency.
+
+## Documentation
+
+* [User guide (English)](docs/en/README.md)
+* [Benutzerhandbuch (Deutsch)](docs/de/README.md)
+* [API of the module](https://wifiwhirl.de/Integrationen/api)
+* Ready-made VIS-2 view to import: [vis-2/whirlpool-view.json](vis-2/whirlpool-view.json) (English),
+  [vis-2/whirlpool-view.de.json](vis-2/whirlpool-view.de.json) (German)
 
 ## Development
 
-```bash
-npm install
-npm test          # unit tests (lib/mapping.js, real module answer in test/fixtures) + package checks
-npm run lint
-npm run check     # TypeScript check of the JavaScript
-```
+See [DEVELOPMENT.md](DEVELOPMENT.md).
 
-Tested against a real module (software 2.1.0).
+## Disclaimer
+Bestway® and Lay-Z-Spa™ are trademarks of Bestway Inflatables & Material Corp. This adapter and the WifiWhirl module are not affiliated with or endorsed by Bestway.
 
 ## Changelog
 <!--
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* (WifiWhirl) User guide in English and German (`docs/en`, `docs/de`) with screenshots, linked via `common.docs`
+* (WifiWhirl) README restructured, development notes moved to `DEVELOPMENT.md`
+
 ### 0.1.3 (2026-11-22)
 
 * "After the target time" labels are English only
@@ -77,10 +100,6 @@ Tested against a real module (software 2.1.0).
 ### 0.1.0
 
 * first version: values, control, water quality, maintenance and Smart Schedule via the module API (software 2.1.0+), no MQTT broker needed
-
-## Disclaimer
-
-Bestway® and Lay-Z-Spa™ are trademarks of Bestway Inflatables & Material Corp. This adapter and the WifiWhirl module are not affiliated with or endorsed by Bestway.
 
 ## License
 
