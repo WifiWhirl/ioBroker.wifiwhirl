@@ -1,0 +1,543 @@
+{
+ "name": "Whirlpool",
+ "settings": {
+  "style": {
+   "background": "#eef3f7"
+  },
+  "sizex": "760",
+  "sizey": "520"
+ },
+ "widgets": {
+  "w000001": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": ""
+   },
+   "style": {
+    "left": "10px",
+    "top": "10px",
+    "width": "360px",
+    "height": "250px",
+    "background": "#ffffff",
+    "border-radius": "14px",
+    "box-shadow": "0 1px 4px rgba(0,0,0,.15)"
+   }
+  },
+  "w000002": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": ""
+   },
+   "style": {
+    "left": "380px",
+    "top": "10px",
+    "width": "360px",
+    "height": "250px",
+    "background": "#ffffff",
+    "border-radius": "14px",
+    "box-shadow": "0 1px 4px rgba(0,0,0,.15)"
+   }
+  },
+  "w000003": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": ""
+   },
+   "style": {
+    "left": "10px",
+    "top": "270px",
+    "width": "730px",
+    "height": "230px",
+    "background": "#ffffff",
+    "border-radius": "14px",
+    "box-shadow": "0 1px 4px rgba(0,0,0,.15)"
+   }
+  },
+  "w000004": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "<b>Whirlpool</b>"
+   },
+   "style": {
+    "left": "25px",
+    "top": "20px",
+    "width": "300px",
+    "height": "26px",
+    "font-size": "18px",
+    "color": "#1f2a37"
+   }
+  },
+  "w000005": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Wasser"
+   },
+   "style": {
+    "left": "25px",
+    "top": "55px",
+    "width": "150px",
+    "height": "20px",
+    "color": "#5f6b7a",
+    "font-size": "14px"
+   }
+  },
+  "w000006": {
+   "tpl": "tplValueFloat",
+   "widgetSet": "basic",
+   "data": {
+    "oid": "wifiwhirl.0.status.waterTemperature",
+    "digits": "0",
+    "html_append_singular": " °C",
+    "html_append_plural": " °C"
+   },
+   "style": {
+    "left": "25px",
+    "top": "75px",
+    "width": "150px",
+    "height": "44px",
+    "font-size": "34px",
+    "font-weight": "600",
+    "color": "#1f2a37"
+   }
+  },
+  "w000007": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Bereit in"
+   },
+   "style": {
+    "left": "200px",
+    "top": "55px",
+    "width": "150px",
+    "height": "20px",
+    "color": "#5f6b7a",
+    "font-size": "14px"
+   }
+  },
+  "w000008": {
+   "tpl": "tplValueFloat",
+   "widgetSet": "basic",
+   "data": {
+    "oid": "wifiwhirl.0.status.readyInHours",
+    "digits": "1",
+    "is_comma": true,
+    "html_append_singular": " h",
+    "html_append_plural": " h"
+   },
+   "style": {
+    "left": "200px",
+    "top": "75px",
+    "width": "150px",
+    "height": "44px",
+    "font-size": "34px",
+    "font-weight": "600",
+    "color": "#1f2a37"
+   }
+  },
+  "w000009": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Zieltemperatur"
+   },
+   "style": {
+    "left": "25px",
+    "top": "135px",
+    "width": "200px",
+    "height": "20px",
+    "color": "#5f6b7a",
+    "font-size": "14px"
+   }
+  },
+  "w000010": {
+   "tpl": "tplJquiSlider",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.control.targetTemperature",
+    "min": "20",
+    "max": "40",
+    "step": "1",
+    "unit": "°C",
+    "valueLabelDisplay": "on"
+   },
+   "style": {
+    "left": "25px",
+    "top": "160px",
+    "width": "320px",
+    "height": "40px"
+   }
+  },
+  "w000011": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Außen"
+   },
+   "style": {
+    "left": "25px",
+    "top": "210px",
+    "width": "80px",
+    "height": "20px",
+    "color": "#5f6b7a",
+    "font-size": "14px"
+   }
+  },
+  "w000012": {
+   "tpl": "tplValueFloat",
+   "widgetSet": "basic",
+   "data": {
+    "oid": "wifiwhirl.0.status.ambientTemperature",
+    "digits": "0",
+    "html_append_singular": " °C",
+    "html_append_plural": " °C"
+   },
+   "style": {
+    "left": "85px",
+    "top": "206px",
+    "width": "80px",
+    "height": "26px",
+    "font-size": "20px",
+    "font-weight": "600",
+    "color": "#1f2a37"
+   }
+  },
+  "w000013": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Leistung"
+   },
+   "style": {
+    "left": "200px",
+    "top": "210px",
+    "width": "80px",
+    "height": "20px",
+    "color": "#5f6b7a",
+    "font-size": "14px"
+   }
+  },
+  "w000014": {
+   "tpl": "tplValueFloat",
+   "widgetSet": "basic",
+   "data": {
+    "oid": "wifiwhirl.0.status.power",
+    "digits": "0",
+    "html_append_singular": " W",
+    "html_append_plural": " W"
+   },
+   "style": {
+    "left": "270px",
+    "top": "206px",
+    "width": "80px",
+    "height": "26px",
+    "font-size": "20px",
+    "font-weight": "600",
+    "color": "#1f2a37"
+   }
+  },
+  "w000015": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "<b>Schalten</b>"
+   },
+   "style": {
+    "left": "395px",
+    "top": "20px",
+    "width": "300px",
+    "height": "26px",
+    "font-size": "18px",
+    "color": "#1f2a37"
+   }
+  },
+  "w000016": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Filterpumpe"
+   },
+   "style": {
+    "left": "395px",
+    "top": "68px",
+    "width": "180px",
+    "height": "24px",
+    "font-size": "16px",
+    "color": "#1f2a37"
+   }
+  },
+  "w000017": {
+   "tpl": "tplJquiBool",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.control.pump",
+    "type": "switch"
+   },
+   "style": {
+    "left": "640px",
+    "top": "60px",
+    "width": "80px",
+    "height": "40px"
+   }
+  },
+  "w000018": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Heizung"
+   },
+   "style": {
+    "left": "395px",
+    "top": "113px",
+    "width": "180px",
+    "height": "24px",
+    "font-size": "16px",
+    "color": "#1f2a37"
+   }
+  },
+  "w000019": {
+   "tpl": "tplJquiBool",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.control.heater",
+    "type": "switch"
+   },
+   "style": {
+    "left": "640px",
+    "top": "105px",
+    "width": "80px",
+    "height": "40px"
+   }
+  },
+  "w000020": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "AirJet"
+   },
+   "style": {
+    "left": "395px",
+    "top": "158px",
+    "width": "180px",
+    "height": "24px",
+    "font-size": "16px",
+    "color": "#1f2a37"
+   }
+  },
+  "w000021": {
+   "tpl": "tplJquiBool",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.control.airjet",
+    "type": "switch"
+   },
+   "style": {
+    "left": "640px",
+    "top": "150px",
+    "width": "80px",
+    "height": "40px"
+   }
+  },
+  "w000022": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Tastensperre"
+   },
+   "style": {
+    "left": "395px",
+    "top": "203px",
+    "width": "180px",
+    "height": "24px",
+    "font-size": "16px",
+    "color": "#1f2a37"
+   }
+  },
+  "w000023": {
+   "tpl": "tplJquiBool",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.control.lock",
+    "type": "switch"
+   },
+   "style": {
+    "left": "640px",
+    "top": "195px",
+    "width": "80px",
+    "height": "40px"
+   }
+  },
+  "w000024": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "<b>Smart Schedule</b>"
+   },
+   "style": {
+    "left": "25px",
+    "top": "280px",
+    "width": "300px",
+    "height": "26px",
+    "font-size": "18px",
+    "color": "#1f2a37"
+   }
+  },
+  "w000025": {
+   "tpl": "tplJquiInput",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.smartSchedule.targetTime",
+    "label": "Zielzeit (JJJJ-MM-TT HH:MM)",
+    "asString": true,
+    "withEnter": false,
+    "variant": "standard"
+   },
+   "style": {
+    "left": "25px",
+    "top": "315px",
+    "width": "330px",
+    "height": "56px"
+   }
+  },
+  "w000026": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Zieltemperatur"
+   },
+   "style": {
+    "left": "395px",
+    "top": "315px",
+    "width": "200px",
+    "height": "20px",
+    "color": "#5f6b7a",
+    "font-size": "14px"
+   }
+  },
+  "w000027": {
+   "tpl": "tplJquiSlider",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.smartSchedule.targetTemperature",
+    "min": "20",
+    "max": "40",
+    "step": "1",
+    "unit": "°C",
+    "valueLabelDisplay": "on"
+   },
+   "style": {
+    "left": "395px",
+    "top": "340px",
+    "width": "330px",
+    "height": "40px"
+   }
+  },
+  "w000028": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Nach der Zielzeit"
+   },
+   "style": {
+    "left": "25px",
+    "top": "385px",
+    "width": "200px",
+    "height": "20px",
+    "color": "#5f6b7a",
+    "font-size": "14px"
+   }
+  },
+  "w000029": {
+   "tpl": "tplJquiButtonState",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.smartSchedule.afterTarget",
+    "type": "radio",
+    "count": "3",
+    "value1": "0",
+    "text1": "Alles aus",
+    "value2": "1",
+    "text2": "Nur Filterpumpe",
+    "value3": "2",
+    "text3": "Heizung hält"
+   },
+   "style": {
+    "left": "25px",
+    "top": "408px",
+    "width": "460px",
+    "height": "40px"
+   }
+  },
+  "w000030": {
+   "tpl": "tplJquiButtonState",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.smartSchedule.start",
+    "type": "button",
+    "count": "1",
+    "value1": "true",
+    "text1": "Starten"
+   },
+   "style": {
+    "left": "520px",
+    "top": "408px",
+    "width": "100px",
+    "height": "40px"
+   }
+  },
+  "w000031": {
+   "tpl": "tplJquiButtonState",
+   "widgetSet": "jqui",
+   "data": {
+    "oid": "wifiwhirl.0.smartSchedule.cancel",
+    "type": "button",
+    "count": "1",
+    "value1": "true",
+    "text1": "Abbrechen"
+   },
+   "style": {
+    "left": "628px",
+    "top": "408px",
+    "width": "105px",
+    "height": "40px"
+   }
+  },
+  "w000032": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "Zeitplan aktiv:"
+   },
+   "style": {
+    "left": "25px",
+    "top": "462px",
+    "width": "120px",
+    "height": "20px",
+    "color": "#5f6b7a",
+    "font-size": "14px"
+   }
+  },
+  "w000033": {
+   "tpl": "tplHtml",
+   "widgetSet": "basic",
+   "data": {
+    "html": "{a:wifiwhirl.0.smartSchedule.active;a ? 'ja' : 'nein'}"
+   },
+   "style": {
+    "left": "140px",
+    "top": "460px",
+    "width": "100px",
+    "height": "24px",
+    "font-size": "15px",
+    "font-weight": "600",
+    "color": "#1f2a37"
+   }
+  }
+ },
+ "activeWidgets": {}
+}

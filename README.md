@@ -5,7 +5,9 @@
 Control your Bestway® Lay-Z-Spa™ whirlpool with the [WifiWhirl](https://wifiwhirl.de) module (software 2.x).
 The adapter talks to the module directly over your WiFi. No MQTT broker, no cloud, no scripts.
 
-German guide with screenshots and a ready-made VIS-2 view: [wifiwhirl.de/Integrationen/iobroker](https://wifiwhirl.de/Integrationen/iobroker)
+German guide with screenshots: [wifiwhirl.de/Integrationen/iobroker](https://wifiwhirl.de/Integrationen/iobroker)
+
+Ready-made VIS-2 view to import: [vis-2/whirlpool-view.json](vis-2/whirlpool-view.json) (English), [vis-2/whirlpool-view.de.json](vis-2/whirlpool-view.de.json) (German).
 
 ## Requirements
 
@@ -53,6 +55,11 @@ Tested against a real module (software 2.1.0).
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* "After the target time" labels are English only
+* VIS-2 view in English, German view kept as `whirlpool-view.de.json`
+
 ### 0.1.2 (2026-11-19)
 
 * State names in all ioBroker languages

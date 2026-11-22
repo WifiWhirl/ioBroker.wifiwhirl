@@ -75,7 +75,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Wasser"
+    "html": "Water"
    },
    "style": {
     "left": "25px",
@@ -109,7 +109,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Bereit in"
+    "html": "Ready in"
    },
    "style": {
     "left": "200px",
@@ -144,7 +144,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Zieltemperatur"
+    "html": "Target temperature"
    },
    "style": {
     "left": "25px",
@@ -177,7 +177,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Außen"
+    "html": "Outside"
    },
    "style": {
     "left": "25px",
@@ -211,7 +211,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Leistung"
+    "html": "Power"
    },
    "style": {
     "left": "200px",
@@ -245,7 +245,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "<b>Schalten</b>"
+    "html": "<b>Control</b>"
    },
    "style": {
     "left": "395px",
@@ -260,7 +260,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Filterpumpe"
+    "html": "Filter pump"
    },
    "style": {
     "left": "395px",
@@ -289,7 +289,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Heizung"
+    "html": "Heater"
    },
    "style": {
     "left": "395px",
@@ -347,7 +347,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Tastensperre"
+    "html": "Button lock"
    },
    "style": {
     "left": "395px",
@@ -392,7 +392,7 @@
    "widgetSet": "jqui",
    "data": {
     "oid": "wifiwhirl.0.smartSchedule.targetTime",
-    "label": "Zielzeit (JJJJ-MM-TT HH:MM)",
+    "label": "Target time (YYYY-MM-DD HH:MM)",
     "asString": true,
     "withEnter": false,
     "variant": "standard"
@@ -408,7 +408,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Zieltemperatur"
+    "html": "Target temperature"
    },
    "style": {
     "left": "395px",
@@ -441,7 +441,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Nach der Zielzeit"
+    "html": "After the target time"
    },
    "style": {
     "left": "25px",
@@ -460,11 +460,11 @@
     "type": "radio",
     "count": "3",
     "value1": "0",
-    "text1": "Alles aus",
+    "text1": "Everything off",
     "value2": "1",
-    "text2": "Nur Filterpumpe",
+    "text2": "Filter pump only",
     "value3": "2",
-    "text3": "Heizung hält"
+    "text3": "Heater keeps temp."
    },
    "style": {
     "left": "25px",
@@ -481,7 +481,7 @@
     "type": "button",
     "count": "1",
     "value1": "true",
-    "text1": "Starten"
+    "text1": "Start"
    },
    "style": {
     "left": "520px",
@@ -498,7 +498,7 @@
     "type": "button",
     "count": "1",
     "value1": "true",
-    "text1": "Abbrechen"
+    "text1": "Cancel"
    },
    "style": {
     "left": "628px",
@@ -511,7 +511,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "Zeitplan aktiv:"
+    "html": "Schedule active:"
    },
    "style": {
     "left": "25px",
@@ -526,7 +526,7 @@
    "tpl": "tplHtml",
    "widgetSet": "basic",
    "data": {
-    "html": "{a:wifiwhirl.0.smartSchedule.active;a ? 'ja' : 'nein'}"
+    "html": "{a:wifiwhirl.0.smartSchedule.active;a ? 'yes' : 'no'}"
    },
    "style": {
     "left": "140px",
