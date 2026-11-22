@@ -55,7 +55,7 @@ Tested against a real module (software 2.1.0).
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.1.3 (2026-11-22)
 
 * "After the target time" labels are English only
 * VIS-2 view in English, German view kept as `whirlpool-view.de.json`

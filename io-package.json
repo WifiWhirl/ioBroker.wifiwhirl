@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "wifiwhirl",
-        "version": "0.1.2",
+        "version": "0.1.3",
         "news": {
+            "0.1.3": {
+                "en": "\"After the target time\" labels are English only\nVIS-2 view in English, German view kept as `whirlpool-view.de.json`\nWiFi signal uses the role `value.rssi`\nSwitches only accept true/false/1/0, the text \"false\" no longer switches on\nA failing poll can no longer leave an unhandled promise rejection",
+                "de": "Die Auswahl „Nach der Zielzeit“ ist nur noch englisch\nVIS-2-Ansicht auf Englisch, die deutsche Ansicht bleibt als `whirlpool-view.de.json`\nDas WLAN-Signal hat die Rolle `value.rssi`\nSchalter nehmen nur true/false/1/0 an, der Text \"false\" schaltet nicht mehr ein\nEine fehlgeschlagene Abfrage hinterlässt keine unbehandelte Promise-Ablehnung mehr",
+                "ru": "Подписи «После целевого времени» теперь только на английском\nПредставление VIS-2 на английском, немецкое сохранено как `whirlpool-view.de.json`\nСигнал WiFi использует роль `value.rssi`\nПереключатели принимают только true/false/1/0, текст \"false\" больше не включает\nНеудачный опрос больше не оставляет необработанный отказ промиса",
+                "pt": "As opções \"Após a hora alvo\" estão apenas em inglês\nVista VIS-2 em inglês, a vista alemã mantém-se como `whirlpool-view.de.json`\nO sinal Wi-Fi usa o papel `value.rssi`\nOs interruptores só aceitam true/false/1/0, o texto \"false\" já não liga\nUma consulta falhada já não deixa uma rejeição de promise por tratar",
+                "nl": "De keuzes \"Na de doeltijd\" zijn alleen nog Engels\nVIS-2-weergave in het Engels, de Duitse weergave blijft als `whirlpool-view.de.json`\nHet wifi-signaal gebruikt de rol `value.rssi`\nSchakelaars accepteren alleen true/false/1/0, de tekst \"false\" schakelt niet meer in\nEen mislukte opvraging laat geen onafgehandelde promise-afwijzing meer achter",
+                "fr": "Les choix « Après l'heure cible » sont uniquement en anglais\nVue VIS-2 en anglais, la vue allemande reste disponible sous `whirlpool-view.de.json`\nLe signal Wi-Fi utilise le rôle `value.rssi`\nLes interrupteurs n'acceptent que true/false/1/0, le texte \"false\" n'allume plus\nUne interrogation échouée ne laisse plus de rejet de promesse non géré",
+                "it": "Le opzioni \"Dopo l'orario obiettivo\" sono solo in inglese\nVista VIS-2 in inglese, la vista tedesca resta come `whirlpool-view.de.json`\nIl segnale Wi-Fi usa il ruolo `value.rssi`\nGli interruttori accettano solo true/false/1/0, il testo \"false\" non accende più\nUn'interrogazione fallita non lascia più un rifiuto di promise non gestito",
+                "es": "Las opciones \"Después de la hora objetivo\" solo están en inglés\nVista VIS-2 en inglés, la vista alemana se mantiene como `whirlpool-view.de.json`\nLa señal Wi-Fi usa el rol `value.rssi`\nLos interruptores solo aceptan true/false/1/0, el texto \"false\" ya no enciende\nUna consulta fallida ya no deja un rechazo de promesa sin gestionar",
+                "pl": "Opcje „Po czasie docelowym” są tylko po angielsku\nWidok VIS-2 po angielsku, niemiecki widok pozostaje jako `whirlpool-view.de.json`\nSygnał Wi-Fi używa roli `value.rssi`\nPrzełączniki akceptują tylko true/false/1/0, tekst \"false\" już nie włącza\nNieudane odpytanie nie pozostawia już nieobsłużonego odrzucenia promise",
+                "uk": "Підписи «Після цільового часу» тепер лише англійською\nПодання VIS-2 англійською, німецьке збережено як `whirlpool-view.de.json`\nСигнал WiFi використовує роль `value.rssi`\nПеремикачі приймають лише true/false/1/0, текст \"false\" більше не вмикає\nНевдале опитування більше не залишає необроблену відмову промісу",
+                "zh-cn": "\"目标时间之后\"的选项现在仅为英文\nVIS-2 视图为英文，德文视图保留为 `whirlpool-view.de.json`\nWiFi 信号使用角色 `value.rssi`\n开关只接受 true/false/1/0，文本 \"false\" 不再开启\n查询失败不再留下未处理的 Promise 拒绝"
+            },
             "0.1.2": {
                 "en": "State names in all ioBroker languages\nWater quality values are writable, so they now use the role \"level\"\n\"Never\" and \"no schedule\" leave a state empty instead of writing null",
                 "de": "Namen der Datenpunkte in allen ioBroker-Sprachen\nWasserwerte sind beschreibbar und haben deshalb jetzt die Rolle „level“\n„Nie“ und „kein Zeitplan“ lassen den Datenpunkt leer, statt null zu schreiben",
