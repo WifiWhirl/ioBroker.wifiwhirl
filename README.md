@@ -73,7 +73,7 @@ Bestway® and Lay-Z-Spa™ are trademarks of Bestway Inflatables & Material Corp
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.1.4 (2026-11-22)
 
 * (WifiWhirl) User guide in English and German (`docs/en`, `docs/de`) with screenshots, linked via `common.docs`
 * (WifiWhirl) README restructured, development notes moved to `DEVELOPMENT.md`

@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "wifiwhirl",
-        "version": "0.1.3",
+        "version": "0.1.4",
         "news": {
+            "0.1.4": {
+                "en": "User guide in English and German (docs/en, docs/de) with screenshots, linked via common.docs\nREADME restructured, development notes moved to DEVELOPMENT.md",
+                "de": "Benutzerhandbuch auf Englisch und Deutsch (docs/en, docs/de) mit Screenshots, eingetragen über common.docs\nREADME neu gegliedert, Entwicklerhinweise in DEVELOPMENT.md verschoben",
+                "ru": "Руководство пользователя на английском и немецком (docs/en, docs/de) со скриншотами, подключено через common.docs\nREADME переработан, заметки для разработчиков перенесены в DEVELOPMENT.md",
+                "pt": "Manual do utilizador em inglês e alemão (docs/en, docs/de) com capturas de ecrã, ligado via common.docs\nREADME reorganizado, notas de desenvolvimento movidas para DEVELOPMENT.md",
+                "nl": "Gebruikershandleiding in het Engels en Duits (docs/en, docs/de) met schermafbeeldingen, gekoppeld via common.docs\nREADME opnieuw ingedeeld, ontwikkelaarsnotities verplaatst naar DEVELOPMENT.md",
+                "fr": "Guide d'utilisation en anglais et en allemand (docs/en, docs/de) avec captures d'écran, référencé via common.docs\nREADME restructuré, notes de développement déplacées dans DEVELOPMENT.md",
+                "it": "Guida utente in inglese e tedesco (docs/en, docs/de) con screenshot, collegata tramite common.docs\nREADME riorganizzato, note per gli sviluppatori spostate in DEVELOPMENT.md",
+                "es": "Guía de usuario en inglés y alemán (docs/en, docs/de) con capturas de pantalla, enlazada mediante common.docs\nREADME reorganizado, notas de desarrollo movidas a DEVELOPMENT.md",
+                "pl": "Instrukcja obsługi po angielsku i niemiecku (docs/en, docs/de) ze zrzutami ekranu, podpięta przez common.docs\nREADME przebudowane, uwagi dla programistów przeniesione do DEVELOPMENT.md",
+                "uk": "Посібник користувача англійською та німецькою (docs/en, docs/de) зі знімками екрана, підключено через common.docs\nREADME перебудовано, нотатки для розробників перенесено до DEVELOPMENT.md",
+                "zh-cn": "英文和德文用户手册（docs/en、docs/de），含截图，通过 common.docs 关联\nREADME 重新编排，开发说明移至 DEVELOPMENT.md"
+            },
             "0.1.3": {
                 "en": "\"After the target time\" labels are English only\nVIS-2 view in English, German view kept as `whirlpool-view.de.json`\nWiFi signal uses the role `value.rssi`\nSwitches only accept true/false/1/0, the text \"false\" no longer switches on\nA failing poll can no longer leave an unhandled promise rejection",
                 "de": "Die Auswahl „Nach der Zielzeit“ ist nur noch englisch\nVIS-2-Ansicht auf Englisch, die deutsche Ansicht bleibt als `whirlpool-view.de.json`\nDas WLAN-Signal hat die Rolle `value.rssi`\nSchalter nehmen nur true/false/1/0 an, der Text \"false\" schaltet nicht mehr ein\nEine fehlgeschlagene Abfrage hinterlässt keine unbehandelte Promise-Ablehnung mehr",
